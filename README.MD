@@ -39,7 +39,7 @@ need to your change, We will certainly merge it.
  ```Java
         ZarinPal       purchase = ZarinPal.getPurchase(this);
         PaymentRequest payment  = ZarinPal.getPaymentRequest();
-        //If you test onmsandbox, you can use it:
+        //If you will test on our sandbox, you can use it:
         PaymentRequest payment  = ZarinPal.getSandboxPaymentRequest();
 
 
