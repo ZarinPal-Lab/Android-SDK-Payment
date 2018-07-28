@@ -8,7 +8,7 @@ Simply Request to ZarinPal IPG and Callback Handling
 * Support ZarinGate in 0.0.4 Version
 * Implement SandBox Payment in 0.0.4 Version
 
->Note: This version is open source then you can open pull request to us and we check it, If project
+>Note: This version is open source then you can open pull request and we check it, If project
 need to your change, We will certainly merge it.
 
 
