@@ -3,10 +3,12 @@
 ZarinPal Payment Requeset SDK on Android Platforms
 Simply Request to ZarinPal IPG and Callback Handling
 
+### new Options:
+
 * Support ZarinGate in 0.0.4 Version
 * Implement SandBox Payment in 0.0.4 Version
 
-> This version is open source then you can open pull request to us and we check it, If project
+>Note: This version is open source then you can open pull request to us and we check it, If project
 need to your change, We will certainly merge it.
 
 
