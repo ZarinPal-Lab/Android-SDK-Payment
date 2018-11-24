@@ -35,7 +35,7 @@ need to your change, We will certainly merge it.
          <data android:scheme="<YOUR-APP-SCHEME>"/>
      </intent-filter>
 ```
-###Example For Payment Request:
+### Example For Payment Request:
  ```Java
         ZarinPal       purchase = ZarinPal.getPurchase(this);
         PaymentRequest payment  = ZarinPal.getPaymentRequest();
@@ -71,7 +71,7 @@ need to your change, We will certainly merge it.
  ```
 
 
-###Example For Callback Handler:
+### Example For Callback Handler:
  ```Java
          /**
          * When User Return to Application From IPG on Browser
