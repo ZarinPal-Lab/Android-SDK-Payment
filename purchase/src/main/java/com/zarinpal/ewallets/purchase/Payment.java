@@ -13,5 +13,6 @@ class Payment {
     public static final String MOBILE_PARAMS       = "Mobile";
     public static final String EMAIL_PARAMS        = "Email";
     public static final String AUTHORITY_PARAMS    = "Authority";
+    public static final String PAYLOAD = "Payload";
 
 }

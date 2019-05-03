@@ -1,8 +1,5 @@
 package com.zarinpal.ewallets.purchase;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -26,6 +23,7 @@ public class PaymentRequest {
     private String description;
     private String callBackURL;
     private String authority;
+    private String payload;
 
 
     public void setMerchantID(String merchantID) {
@@ -50,6 +48,10 @@ public class PaymentRequest {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPayload() {
+        return payload;
     }
 
     public String getCallBackURL() {
@@ -87,6 +89,10 @@ public class PaymentRequest {
         return authority;
     }
 
+    public void setPayload(String payload) {
+        this.payload = payload;
+    }
+
     public JSONObject getPaymentRequestAsJson() throws JSONException {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put(Payment.MERCHANT_ID_PARAMS, getMerchantID());
@@ -95,6 +101,7 @@ public class PaymentRequest {
         jsonObject.put(Payment.CALLBACK_URL_PARAMS, getCallBackURL());
         jsonObject.put(Payment.MOBILE_PARAMS, getMobile()); //Optional Value
         jsonObject.put(Payment.EMAIL_PARAMS, getEmail());//Optional Value
+        jsonObject.put(Payment.PAYLOAD, getPayload());//Optional Value
         return jsonObject;
     }
 
