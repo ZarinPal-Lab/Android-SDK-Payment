@@ -17,7 +17,7 @@ need to your change, We will certainly merge it.
 
 - Compile ZarinPal In App Purchase SDK:
 ```Gradle
-   compile 'com.zarinpal:purchase:0.0.8-beta'
+   implementation 'com.zarinpal:purchase:0.0.9'
  ```
 - Internet Access Permission:
  
