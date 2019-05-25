@@ -6,8 +6,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.3'
 
     lintOptions {
         abortOnError false
@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 5
         versionName "5.0"
     }
@@ -29,7 +29,7 @@ android {
 }
 
 ext.build = [
-        mVersion : "0.0.8-beta",
+        mVersion : "0.0.9",
         mUser  : "imanx",
         mToken : "",
 ]
@@ -93,7 +93,7 @@ bintray {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    provided 'com.android.support:appcompat-v7:25.0.1'
+    provided 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.mcxiaoke.volley:library:1.0.19'
 
 }
