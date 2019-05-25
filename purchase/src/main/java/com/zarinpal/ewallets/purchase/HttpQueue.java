@@ -25,6 +25,8 @@ class HttpQueue {
     }
 
     public void addToRequest(Request request) {
+        request.setShouldCache(false);
+        queue.getCache().clear();
         queue.add(request);
     }
 }
