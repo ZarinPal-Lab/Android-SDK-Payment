@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                PaymentRequest payment = ZarinPal.getPaymentRequest();
+                PaymentRequest payment = ZarinPal.getSandboxPaymentRequest();
 
 
                 payment.setMerchantID("71c705f8-bd37-11e6-aa0c-000c295eb8fc");

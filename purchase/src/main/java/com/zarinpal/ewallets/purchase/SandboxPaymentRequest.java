@@ -18,7 +18,7 @@ public class SandboxPaymentRequest extends PaymentRequest {
 
     @Override
     public String getStartPaymentGatewayURL(String authority) {
-        return String.format(PAYMENT_GATEWAY_URL, SANDBOX, authority)
+        return String.format(PAYMENT_GATEWAY_URL, SANDBOX, authority, isZarinGateEnable() ? "ZarinGate" : "")
                 .replace(WORLD_WIDE_WEB, "");
     }
 
