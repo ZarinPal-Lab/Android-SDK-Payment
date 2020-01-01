@@ -6,8 +6,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.3'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
 
     lintOptions {
         abortOnError false
@@ -15,9 +15,9 @@ android {
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 5
-        versionName "5.0"
+        targetSdkVersion 29
+        versionCode 10
+        versionName "0.0.10"
     }
     buildTypes {
         release {
@@ -28,15 +28,9 @@ android {
 
 }
 
-ext.build = [
-        mVersion : "0.0.9",
-        mUser  : "imanx",
-        mToken : "9798a6fc07dde20ed654f98b91cf428cf5b0be6f",
-]
 
 
-
-version = build.mVersion
+version = android.defaultConfig.versionName
 group = "com.zarinpal"
 
 
@@ -69,18 +63,23 @@ artifacts {
 
 
 bintray {
-    user = build.mUser
-    key = build.mToken
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    def token = properties["TOKEN"]
+    def id = properties["USER"]
+
+    user = id
+    key = token
     pkg {
 
         repo = 'purchase'
         name = 'pg'
 
         version {
-            name = build.mVersion
+            name = android.defaultConfig.versionName
             desc = 'ZarinPal In App Purchase SDK'
             released = new Date()
-            vcsTag = build.mVersion
+            vcsTag = android.defaultConfig.versionName
         }
 
         licenses = ['Apache-2.0']
@@ -93,7 +92,7 @@ bintray {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    provided 'com.android.support:appcompat-v7:26.1.0'
+    provided 'com.android.support:appcompat-v7:28.0.0'
     compile 'com.mcxiaoke.volley:library:1.0.19'
 
 }

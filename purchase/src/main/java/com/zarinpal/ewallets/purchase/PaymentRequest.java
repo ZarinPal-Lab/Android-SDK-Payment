@@ -14,19 +14,28 @@ import org.json.JSONObject;
 public class PaymentRequest {
 
 
-    protected static final String PAYMENT_GATEWAY_URL      = "https://www.%szarinpal.com/pg/StartPay/%s/ZarinGate";
+    protected static final String PAYMENT_GATEWAY_URL      = "https://www.%szarinpal.com/pg/StartPay/%s/%s";
     protected static final String PAYMENT_REQUEST_URL      = "https://www.%szarinpal.com/pg/rest/WebGate/PaymentRequest.json";
     protected static final String VERIFICATION_PAYMENT_URL = "https://www.%szarinpal.com/pg/rest/WebGate/PaymentVerification.json";
 
 
-    private String merchantID;
-    private long   amount;
-    private String mobile;
-    private String email;
-    private String description;
-    private String callBackURL;
-    private String authority;
+    private String  merchantID;
+    private long    amount;
+    private String  mobile;
+    private String  email;
+    private String  description;
+    private String  callBackURL;
+    private String  authority;
+    private boolean isZarinGateEnable;
 
+
+    public boolean isZarinGateEnable() {
+        return isZarinGateEnable;
+    }
+
+    public void isZarinGateEnable(boolean zarinGateEnable) {
+        isZarinGateEnable = zarinGateEnable;
+    }
 
     public void setMerchantID(String merchantID) {
         this.merchantID = merchantID;
@@ -99,7 +108,7 @@ public class PaymentRequest {
     }
 
     public String getStartPaymentGatewayURL(String authority) {
-        return String.format(PAYMENT_GATEWAY_URL, "", authority);
+        return String.format(PAYMENT_GATEWAY_URL, "", authority, isZarinGateEnable ? "ZarinGate" : "");
     }
 
     public String getPaymentRequestURL() {
@@ -109,5 +118,6 @@ public class PaymentRequest {
     public String getVerificationPaymentURL() {
         return String.format(VERIFICATION_PAYMENT_URL, "");
     }
+
 
 }

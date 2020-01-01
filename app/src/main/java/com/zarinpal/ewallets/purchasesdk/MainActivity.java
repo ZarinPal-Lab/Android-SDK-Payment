@@ -42,11 +42,12 @@ public class MainActivity extends AppCompatActivity {
 
 
                 payment.setMerchantID("71c705f8-bd37-11e6-aa0c-000c295eb8fc");
-                payment.setAmount(100);
+                payment.setAmount(120);
                 payment.setDescription("In App Purchase Test SDK");
                 payment.setCallbackURL("app://app");
                 payment.setMobile("09355106005");
                 payment.setEmail("imannamix@gmail.com");
+                payment.isZarinGateEnable(false);
 
 
                 ZarinPal.getPurchase(getApplicationContext()).startPayment(payment, new OnCallbackRequestPaymentListener() {
