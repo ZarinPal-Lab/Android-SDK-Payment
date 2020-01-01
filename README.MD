@@ -7,6 +7,7 @@ Simply Request to ZarinPal IPG and Callback Handling
 
 * Support ZarinGate in 0.0.4 Version
 * Implemented SandBox Payment in 0.0.8 Version
+* `ZarinGate` is Optional attribute in 0.0.10 Version
 
 >Note: This version is open source then you can open pull request and we check it, If project
 need to your change, We will certainly merge it.
@@ -46,6 +47,7 @@ need to your change, We will certainly merge it.
 
         payment.setMerchantID("71c705f8-bd37-11e6-aa0c-000c295eb8fc");
         payment.setAmount(100);
+        payment.isZarinGateEnable(true);  // If you actived `ZarinGate`, can handle payment by `ZarinGate`
         payment.setDescription("In App Purchase Test SDK");
         payment.setCallbackURL("yourapp://app");     /* Your App Scheme */
         payment.setMobile("09355106005");            /* Optional Parameters */
