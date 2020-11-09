@@ -27,7 +27,15 @@ public class PaymentRequest {
     private String  callBackURL;
     private String  authority;
     private boolean isZarinGateEnable;
+    private String payload;
 
+    public String getPayload() {
+        return payload;
+    }
+
+    public void setPayload(String payload) {
+        this.payload = payload;
+    }
 
     public boolean isZarinGateEnable() {
         return isZarinGateEnable;
