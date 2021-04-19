@@ -7,7 +7,7 @@ Simply Request to ZarinPal IPG and Callback Handling
 ### ZarinPal Flow:
 In first step You must initilize of `ZarinPal` by `getPurchase` after that, ZarinPal Ready to Payment. for begining you must create a `PaymentRequest` by `getPaymentRequest`, Now you must set parameters `MerchantID`, `Amount (In Rials)`, `Description` and `CallbackUrl`
 
-- What is `Payment Request`?
+**What is `Payment Request`?
 Payment Request is requirment paramaters payment for Indentity in ZarinPal
 
 **Require Parameters:**
