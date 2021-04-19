@@ -9,7 +9,7 @@ In first step You must initilize of `ZarinPal` by `getPurchase` after that, Zari
 
 **What is `Payment Request`?**
 
-Payment Request is requirment paramaters payment for Indentity in ZarinPal
+Payment Request is require paramaters payment for Indentity in ZarinPal
 
 **Require Parameters:**
 
