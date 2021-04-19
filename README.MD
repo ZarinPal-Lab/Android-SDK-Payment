@@ -1,4 +1,4 @@
-# ZarinPal In App Purchase Android SDK
+# ZarinPal Purchase Android SDK
 
 ZarinPal Payment Requeset SDK on Android Platforms
 Simply Request to ZarinPal IPG and Callback Handling
