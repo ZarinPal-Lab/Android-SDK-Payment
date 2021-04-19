@@ -28,7 +28,7 @@ After completing the purchase, you can send a `verificationPayment` request if i
 
 for verifty purchase you must set `getIntent().getData()` and call `verificationPayment` for verify inner app sure ZarinPal don't recommend to use this method becuase this is not safe. That's better you do verifing flow on your server and notify your app.
 
-NOTE> ZarinPal is not IAB or IAP, ZarinPal JUST provides payment solution.
+>NOTE ZarinPal is not IAB or IAP, ZarinPal JUST provides payment solution.
 
 
 How to use
@@ -55,7 +55,7 @@ How to use
          <data android:scheme="<YOUR-APP-SCHEME>"/>
      </intent-filter>
 ```
-Note> If You want handle and checking of verification your Payment on Your sever you must set your server address (aka `URL`) by `setCallbackURL` and no need to do the above step.
+>Note If You want handle and checking of verification your Payment on Your sever you must set your server address (aka `URL`) by `setCallbackURL` and no need to do the above step.
 
 ### Example For Payment Request:
  ```Java
