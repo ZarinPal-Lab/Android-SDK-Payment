@@ -44,7 +44,7 @@ How to use
 ```XML
     <uses-permission android:name="android.permission.INTERNET"/>
 ```
-- Set Your Application Scheme on `AndroidManifest.xml` for Callback for inner handling in App:
+- Set Your Application Scheme on `AndroidManifest.xml` to Callback for inner handling in App:
 ```XML
     <intent-filter>
         <action android:name="android.intent.action.VIEW"/>
