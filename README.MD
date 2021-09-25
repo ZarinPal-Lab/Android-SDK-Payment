@@ -1,4 +1,4 @@
-# The Repo and Project has been DEPRECATED and Archived please check [iOS-SDK](https://github.com/ZarinPal/Android-SDK)
+# The Repo and Project has been DEPRECATED and Archived please check [Android-SDK](https://github.com/ZarinPal/Android-SDK)
 
 # ZarinPal Purchase Android SDK
 
